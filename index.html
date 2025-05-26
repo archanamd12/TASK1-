@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>my page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+ 
+  <header>
+    <div class="container">
+      <h1 class="logo">MyPage </h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger">&#9776;</div>
+      </nav>
+    </div>
+  </header>
+
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to MyPage</h2>
+      <p>This is Task 1.Asimple page using HTML and CSS</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 MyBrand</p>
+      <div class="social-links">
+        <a href="#">🌐</a>
+        <a href="#">🐦</a>
+        <a href="#">📘</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple JS to toggle menu -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>
